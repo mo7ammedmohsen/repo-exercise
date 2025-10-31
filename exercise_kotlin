@@ -1,0 +1,175 @@
+	fun main() {
+    var s1 = "Hello"
+    val s2 = s1 // s1 and s2 now point at the same string - "Hello"
+    println(s1) // prints "Hello"
+    println(s2) // prints "Hello"
+    s1 += " world" // append "world" to s1
+    println(s1) // prints "Hello world"
+    println(s2) // still prints "Hello" because s2 still points to the String "Hello" while s1 is a new String object
+    val myLingh = s1.length
+        println(myLingh)
+        
+    val myString = "Hello"
+	val startsWithHel = myString.startsWith("Hel")
+    val endsWithLo = myString.endsWith("lo")
+    println(startsWithHel)
+    println(endsWithLo)
+    
+    val myString2 = "Hello"
+	val firstChar = myString2.first()
+    println(firstChar)
+
+    val myString3 = "Hello"
+	val myUpperString = myString3.uppercase()
+    val myLowerString = myString3.lowercase()
+    val myString4 = myString3.substring(1)
+    println(myUpperString)
+    println(myLowerString)
+    println(myString4)
+    
+    val num = 10 
+    println("Result is ${num + 20}") 
+    
+    val s = "Hello world"
+    println(s[0])
+    
+    
+    val finishedHomework = false // or true 
+    val cleanedRoom = true // or false 
+    val canPlayGames = finishedHomework && cleanedRoom 
+    println(canPlayGames) 
+    
+    val carCleaned = false // or true 
+    val grassCut = true // or false 
+    val canGoToCinema = carCleaned || grassCut 
+    println(canGoToCinema) 
+    
+     
+    print(11 > 10) 
+    print(11 <= 10) 
+    print(10 >= 11) 
+    print(10 < 11) 
+    println("-------------")
+    print(10 > 10) 
+    print(10 >= 10) 
+    print(10 <= 10) 
+    println("-------------")
+    print("A" == "A") 
+    print("A" == "B") 
+    print("A" == "AB") 
+	println("-------------")
+    print(true && true) 
+    print(true && false) 
+    print(false && true) 
+    print(false && false) 
+    println("-------------")
+    print(true || true) 
+    print(true || false) 
+    print(false || true) 
+    print(false || false)
+    println("-------------")
+    print(true) 
+    print(!true) 
+    print(!!true) 
+    print(!!!true) 
+    println("-------------")
+    val finishedHomework123 = true 
+    val cleanedRoom123 = true 
+    val passedMathExam = false 
+    val canPlayGames12 = finishedHomework123 && cleanedRoom123 
+    val canEatSweets = finishedHomework123 && passedMathExam
+    print(canPlayGames12) 
+    print(canEatSweets) 
+    
+    println("***-------------**")
+    val accountType = "Paid"
+    val text = if (accountType == "free") "Free account" else "Paid account"
+        println(text)
+        
+        println("Is it going to rain?")
+    val probability = 70
+    if (probability <= 40) {
+        println("Unlikely")
+    } else if (probability <= 80) {
+        println("Likely")
+    } else if (probability < 100) {
+        println("Yes")
+    } else {
+        println("What?")
+    }
+    
+    val hour = 11
+    val userName = "admin"
+    if (hour <= 10) {
+        print("Good morning, ")
+    } else if (hour >= 20) {
+        print("Good evening, ")
+    } else {
+        print("Hello, ")
+    }
+
+    if (userName == "admin") {
+        println("what would you like to do?")
+    } else {
+        println("how can I help you, $userName?")
+    }
+    
+    val password = "ABC"
+    val error = if (password.length < 7) "Password is too short." else "Password is ok."
+    print(error)
+    
+    val time = 20
+    val greeting =
+        if (time < 18) {
+            "Good day."
+        } else {
+            "Good evening."
+        }
+    println(greeting)
+    
+    println()
+    
+    println("Is it going to rain?")
+	val probability1 = 70
+    val textNew = when {
+            probability1 < 40 -> "Unlikely"
+            probability1 <= 80 -> "Likely"
+            probability1 < 100 -> "Yes"
+            else -> "What?"
+            }
+    println(textNew)
+}
+    
+//Result
+
+Hello
+Hello
+Hello world
+Hello
+11
+true
+true
+H
+HELLO
+hello
+ello
+Result is 30
+H
+false
+true
+truefalsefalsetrue-------------
+falsetruetrue-------------
+truefalsefalse-------------
+truefalsefalsefalse-------------
+truetruetruefalse-------------
+truefalsetruefalse-------------
+truefalse***-------------**
+Paid account
+Is it going to rain?
+Likely
+Hello, what would you like to do?
+Password is too short.Good evening.
+
+Is it going to rain?
+Likely
+
