@@ -1,0 +1,55 @@
+//Examples of functions with parameters and results
+//أمثلة على الوظائف مع المعلمات والنتائج
+
+fun printStars(num: Int) {
+    for (j in 1..num) {
+        print("*")
+    }
+    println()
+} 
+
+fun ascendingTriangle(height: Int) {
+    for (stars in 1..height) {
+        printStars(stars)
+    }
+}
+
+fun descendingTriangle(height : Int) {
+    for (stars in height downTo 1) {
+        printStars(stars)
+    }
+}
+
+fun isoscelesTriangle(width: Int) {
+    ascendingTriangle(width - 1)
+    descendingTriangle(width)
+}
+
+fun main() { 
+    println("Ascending triangle:")
+    ascendingTriangle(5)
+    println("Descending triangle:")
+    descendingTriangle(5)
+    println("Isosceles triangle:")
+    isoscelesTriangle(5)
+}
+
+========================
+
+fun biggerOf(a: Int, b: Int): Int {
+    return if (a > b) a else b
+}
+
+fun triangleArea(width: Double, height: Double): Double = width * height / 2
+
+fun main() { 
+    val area: Double = triangleArea(1.0, 2.0)
+    println(area)
+    println(triangleArea(2.0, 2.0))
+    println(triangleArea(5.0, 5.0))
+    println(triangleArea(10.0, 20.0))
+    println("****************")
+    println(biggerOf(3, 1))
+    println(biggerOf(10, 20))
+}
+
